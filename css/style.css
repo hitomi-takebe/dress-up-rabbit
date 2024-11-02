@@ -168,6 +168,11 @@
     left: 0;
 }
 
+.btn-kigae:hover::after {
+    top: 0;
+    left: 0;
+}
+
 .impression{
     text-align: center;
     padding: 7px 0;

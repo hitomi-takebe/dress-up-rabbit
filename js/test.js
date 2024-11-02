@@ -5,6 +5,10 @@ console.log("ジャンケン作る");
 
 $("#change").on("click", function () {
 
+    //     {
+    //         $('#face_p').setTimeout(hidden, 2000);
+    //     }
+
     // 表情を決める
     console.log("表情");
 
@@ -70,12 +74,19 @@ $("#change").on("click", function () {
         $("#imp2").css("font-size", "2em");
         // この下は消さない🤗
     } else {
-        console.log("何もしない");  
+        console.log("何もしない");
         $('#imp2').html("");
     }
 });
 
-console.log("ジャンケン作る");
+$("#reset").on("click", function () {
+    console.log("最初の状態に戻す");
+    $('#face_randomShow').attr('src', "img/rabbit_face.PNG");
+    $('#clothes_randomShow').attr('src', "img/rabbit.PNG");
+    $('#face_p').html("どんな");
+    $('#clothes_p').html("うさぎさん？");
+    $('#imp2').html("");
+});
 
 //  } else if (a_san === "グー" && b_san === "グー" || a_san === "チョキ" && b_san === "チョキ" || a_san === "パー" && b_san === "パー") {
 //     console.log("あいこ");
