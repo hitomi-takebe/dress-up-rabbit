@@ -23,6 +23,8 @@
 (参考記事)
 html指示出し方法
 -   https://pengi-n.co.jp/column/design/jquery-selecter/
+ボタンの有効化・無効化
+-   https://uxmilk.jp/40456
 
 条件分岐の指示方法
 -   https://stand-4u.com/web/javascript/jquery-if.html
