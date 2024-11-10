@@ -72,6 +72,16 @@ $("#change").on("click", function () {
         $('#imp2').html("／マイルドヤンキーだぞ！＼");
         $("#imp2").css("color", "red");
         $("#imp2").css("font-size", "2em");
+        // 「お着替えしよう」ボタンを無効化
+        $("#change").prop("disabled", true);
+        // ポップアップで3秒後に表示
+        setTimeout(function () {
+            $('.popup').addClass('show').fadeIn();
+        }, 3000);
+        // 「お着替えしよう」ボタンを1秒後に有効化
+        setTimeout(function () {
+            $("#change").prop("disabled",false);
+        }, 3000);
         // この下は消さない🤗
     } else {
         console.log("何もしない");
@@ -88,6 +98,12 @@ $("#reset").on("click", function () {
     $('#imp2').html("");
 });
 
+//ポップアップを出す
+$('#close').on('click', function () {
+    console.log("マイルドヤンキー出没時のポップアップ");
+    $('.popup').fadeOut();
+    // $('#reset').on('click');
+});
 //  } else if (a_san === "グー" && b_san === "グー" || a_san === "チョキ" && b_san === "チョキ" || a_san === "パー" && b_san === "パー") {
 //     console.log("あいこ");
 //     $('#hantei').html("あいこだよ。もう一度遊んでね。");
