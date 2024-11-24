@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+body {
+    background-color: gray;
+}
 /* ヘッダーを中央寄せ */
 .header {
     position: relative;
